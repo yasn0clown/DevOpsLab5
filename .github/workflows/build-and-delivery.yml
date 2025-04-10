@@ -2,10 +2,11 @@ name: Build and Delivery
 
 on:
   workflow_run:
-    branches: ['main']
     workflows: ["Test Python App"]
     types:
       - completed
+    branches:
+      - main
 
 
 jobs:
